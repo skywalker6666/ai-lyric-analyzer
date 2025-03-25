@@ -25,6 +25,9 @@ class AudioEmotionAnalyzer:
             self.labels[i]: float(mean_scores[i])
             for i in top_indices
         }
+        print("[Top Raw YAMNet Predictions]:")
+        for label, score in top_labels.items():
+            print(f"  - {label}: {score:.4f}")
         # 映射到情緒分類
         emotion_results = map_yamnet_labels_to_emotions(top_labels)
         return emotion_results
