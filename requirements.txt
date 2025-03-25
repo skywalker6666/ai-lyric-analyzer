@@ -1,0 +1,8 @@
+transformers
+torch
+openai
+librosa
+numpy
+soundfile
+tensorflow
+tensorflow_hub

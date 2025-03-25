@@ -1,0 +1,12 @@
+# Python cache 檔
+__pycache__/
+*.pyc
+
+# VS Code 設定
+.vscode/
+
+# 音訊暫存資料夾
+temp/
+
+# 虛擬環境
+.venv/
