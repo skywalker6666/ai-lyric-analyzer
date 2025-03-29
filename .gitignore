@@ -10,3 +10,5 @@ temp/
 
 # 虛擬環境
 .venv/
+
+data/
