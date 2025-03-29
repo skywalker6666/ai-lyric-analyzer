@@ -7,7 +7,7 @@ if __name__ == "__main__":
     result = classifier.classify_lyrics(lyrics)
     print("[Lyrics Emotion Classification]:", result)
 
-    audio_path = "data/new_person.wav"
     analyzer = AudioEmotionAnalyzer()
-    emotion = analyzer.analyze_emotion(audio_path)
-    print("[Audio Emotion Scores]:", emotion)
+    analyzer.process_directory(
+        directory="data", top_n=10, output_csv="emotion_results.csv"
+    )
